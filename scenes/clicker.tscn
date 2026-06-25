@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dqpya0adfjhl7"]
+
+[ext_resource type="Script" uid="uid://lhpwfn671gjx" path="res://scripts/clicker.gd" id="1_ecl7i"]
+
+[node name="Clicker" type="Control" unique_id=554975721]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ecl7i")
