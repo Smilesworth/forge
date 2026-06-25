@@ -1,0 +1,21 @@
+[gd_scene format=4 uid="uid://c6c0wo1255otw"]
+
+[ext_resource type="Texture2D" uid="uid://bxu2rmhthwokg" path="res://assets/character/temp/Tile_Grass.png" id="1_ltfp6"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ltfp6"]
+texture = ExtResource("1_ltfp6")
+0:0/size_in_atlas = Vector2i(32, 32)
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-7.086258, -198.41484, -260.48962, -47.076416, -257.3512, 103.56818, 0, 256, 254.21274, 109.84503, 257.35123, -47.076416)
+
+[sub_resource type="TileSet" id="TileSet_s1fef"]
+tile_shape = 1
+tile_size = Vector2i(512, 512)
+physics_layer_0/collision_layer = 1
+sources/3 = SubResource("TileSetAtlasSource_ltfp6")
+
+[node name="Isometric" type="Node2D" unique_id=703525373]
+
+[node name="TileMapLayer" type="TileMapLayer" parent="." unique_id=941990006]
+tile_map_data = PackedByteArray("AAAAAP7/AwAAAAAAAAABAP7/AwAAAAAAAAABAP3/AwAAAAAAAAAAAP3/AwAAAAAAAAACAP7/AwAAAAAAAAACAP3/AwAAAAAAAAACAPz/AwAAAAAAAAABAPz/AwAAAAAAAAAAAPz/AwAAAAAAAAD///3/AwAAAAAAAAD///7/AwAAAAAAAAD/////AwAAAAAAAAAAAP//AwAAAAAAAAABAAAAAwAAAAAAAAABAP//AwAAAAAAAAACAP//AwAAAAAAAAADAP7/AwAAAAAAAAADAP3/AwAAAAAAAAADAPz/AwAAAAAAAAAAAAAAAwAAAAAAAAD//wAAAwAAAAAAAAACAAAAAwAAAAAAAAADAAAAAwAAAAAAAAADAP//AwAAAAAAAAAEAP7/AwAAAAAAAAA=")
+tile_set = SubResource("TileSet_s1fef")
