@@ -2,6 +2,9 @@
 
 [ext_resource type="Script" uid="uid://lhpwfn671gjx" path="res://scripts/clicker.gd" id="1_ecl7i"]
 
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_ecl7i"]
+bg_color = Color(0, 1, 0.09411765, 0.49019608)
+
 [node name="Clicker" type="Control" unique_id=554975721]
 layout_mode = 3
 anchors_preset = 15
@@ -41,7 +44,7 @@ grow_horizontal = 2
 grow_vertical = 2
 text = "Armor Point"
 
-[node name="ResourcePoint" type="Button" parent="." unique_id=554709790]
+[node name="EnemyKilled" type="Button" parent="." unique_id=554709790]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -54,15 +57,38 @@ offset_right = 242.5
 offset_bottom = 138.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Resource Point"
+text = "Kill Enemy"
 
 [node name="ProgressBar" type="ProgressBar" parent="." unique_id=48972341]
 layout_mode = 1
 anchors_preset = 10
 anchor_right = 1.0
-offset_bottom = 27.0
+offset_left = 192.0
+offset_top = 112.0
+offset_right = -192.0
+offset_bottom = 139.0
 grow_horizontal = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_ecl7i")
+value = 100.0
 rounded = true
+
+[node name="Label" type="Label" parent="." unique_id=1848385520]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -152.0
+offset_top = -152.0
+offset_right = 153.0
+offset_bottom = -46.0
+grow_horizontal = 2
+grow_vertical = 0
+text = "SHARDS: 0"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="pressed" from="MeleePoint" to="." method="_on_melee_point_pressed"]
 [connection signal="pressed" from="ArmorPoint" to="." method="_on_armor_point_pressed"]
+[connection signal="pressed" from="EnemyKilled" to="." method="_on_enemy_killed_pressed"]
