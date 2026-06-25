@@ -14,6 +14,19 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_ecl7i")
 
+[node name="ProgressBar" type="ProgressBar" parent="." unique_id=48972341]
+layout_mode = 1
+anchors_preset = 10
+anchor_right = 1.0
+offset_left = 340.0
+offset_top = 192.0
+offset_right = -340.0
+offset_bottom = 248.0
+grow_horizontal = 2
+theme_override_styles/fill = SubResource("StyleBoxFlat_ecl7i")
+value = 100.0
+show_percentage = false
+
 [node name="MeleePoint" type="Button" parent="." unique_id=2108153027]
 layout_mode = 1
 anchors_preset = 8
@@ -58,19 +71,6 @@ offset_bottom = 138.0
 grow_horizontal = 2
 grow_vertical = 2
 text = "Kill Enemy"
-
-[node name="ProgressBar" type="ProgressBar" parent="." unique_id=48972341]
-layout_mode = 1
-anchors_preset = 10
-anchor_right = 1.0
-offset_left = 192.0
-offset_top = 112.0
-offset_right = -192.0
-offset_bottom = 139.0
-grow_horizontal = 2
-theme_override_styles/fill = SubResource("StyleBoxFlat_ecl7i")
-value = 100.0
-rounded = true
 
 [node name="Label" type="Label" parent="." unique_id=1848385520]
 layout_mode = 1
