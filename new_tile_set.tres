@@ -1,0 +1,24 @@
+[gd_resource type="TileSet" format=3 uid="uid://ban5w2w7kqgn2"]
+
+[ext_resource type="Texture2D" uid="uid://bw6bgu00tg256" path="res://assets/tileset/basicTemp/tilesheet_complete.png" id="1_e3020"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_ujgj0"]
+texture = ExtResource("1_e3020")
+texture_region_size = Vector2i(111, 128)
+0:0/next_alternative_id = 2
+0:0/0 = 0
+0:0/0/texture_origin = Vector2i(0, -30)
+10:1/next_alternative_id = 3
+10:1/0 = 0
+10:1/0/texture_origin = Vector2i(0, -30)
+10:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(0, 32, -56.397644, 61.495735, 0.63726234, 94.63333, 56.079014, 61.495735)
+10:1/2 = 2
+10:1/2/texture_origin = Vector2i(0, -30)
+10:1/2/physics_layer_0/polygon_0/points = PackedVector2Array(0.38554382, 1.5421715, -57.06039, 31.228998, 0.38554287, 64.38571, 56.289307, 32.000084)
+
+[resource]
+tile_shape = 1
+tile_layout = 5
+tile_size = Vector2i(111, 64)
+physics_layer_0/collision_layer = 1
+sources/0 = SubResource("TileSetAtlasSource_ujgj0")
